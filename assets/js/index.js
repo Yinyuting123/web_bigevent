@@ -49,5 +49,9 @@ function renderAvatar(userInfo) {
         $('.text-avatar').html(first).show();
 
     }
+}
 
+function highlight(kw) {
+    $('dd').removeClass('layui-this')
+    $(`dd:contains('${kw}')`).addClass('layui-this')
 }
